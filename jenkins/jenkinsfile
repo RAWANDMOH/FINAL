@@ -24,7 +24,8 @@ pipeline {
       }
     }
   }
- always {
+ post {
+        always {
             publishHTML target: [
                 reportName: 'Newman',
                 reportDir: 'newman',
@@ -36,4 +37,5 @@ pipeline {
             ]
 
         }
+    }
 }
