@@ -373,7 +373,7 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "https://api.trello.com/1/cards?idList={{todoListId}}&key={{trelloKey}}&token={{trelloToken}}&name={{name}}",
+					"raw": "https://api.trello.com/1/cards?idList={{todoListId}}&key=0802f05cbdb5ffe1d56b7b22c321eae9&token=ATTA563ebeea74f3d152bd8e4153b4553d2103b40a487d12f499c36345bef27787b666D413F6&name={{name}}",
 					"protocol": "https",
 					"host": [
 						"api",
@@ -391,11 +391,11 @@
 						},
 						{
 							"key": "key",
-							"value": "{{trelloKey}}"
+							"value": "0802f05cbdb5ffe1d56b7b22c321eae9"
 						},
 						{
 							"key": "token",
-							"value": "{{trelloToken}}"
+							"value": "ATTA563ebeea74f3d152bd8e4153b4553d2103b40a487d12f499c36345bef27787b666D413F6"
 						},
 						{
 							"key": "name",
