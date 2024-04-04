@@ -12,7 +12,7 @@ pipeline {
 
     stage('Install newman') {
       steps {
-        sh 'node -version'
+        sh 'mvn -version'
         sh 'echo WE ARE STARTING THE TEST ...'
         sh 'newman -v'
       }
