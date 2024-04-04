@@ -20,9 +20,20 @@ pipeline {
 
     stage('Run test') {
       steps {
-        
         sh 'newman run a_TrelloAPI.postman_collection.json  --disable-unicode --reporters cli,htmlextra,junit --reporter-htmlextra-export newman/report.html --reporter-junit-export newman/report.xml'
       }
     }
   }
+ always {
+            publishHTML target: [
+                reportName: 'Newman',
+                reportDir: 'newman',
+                reportFiles: 'report.html',
+                reportTitles: 'Postman API tests',
+                keepAll: true,
+                alwaysLinkToLastBuild: true,
+                allowMissing: false
+            ]
+
+        }
 }
